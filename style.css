@@ -7,6 +7,7 @@ body{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	left: 0;
 	overflow: hidden;
 	background-color: #0066ff;
 }
@@ -38,4 +39,12 @@ li a:hover {
 
 .fb-like{
 	align-self: auto;
+}
+
+.ans{
+	
+	padding-left: 30%;
+	padding-right: 30%;
+
+	text-align: left;
 }
