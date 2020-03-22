@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Dor</title>
+  <!-- You can use open graph tags to customize link previews.
+  Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+  <meta property="og:url"           content="http://127.0.0.1:5500/index.html#like" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Your Website Title" />
+  <meta property="og:description"   content="Your description" />
+  <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
 </head>
 <body>
-<div id="menu">
+<ul id="menu">
 <li><a href="#about">About Me</a></li>
 <li><a href="#photos">My Photos</a></li>
 <li><a href="#playlist">My Playlist</a></li>
@@ -12,167 +20,133 @@
 <li><a href="#qrcoder">QR code</a></li>
 <li><a href="#spa">Q&A</a></li>
 <li><a href="#contact">Contact Me</a></li>
-</div>
+</ul>
 		  
 <section id="about" class="section">
 <br/>
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
+<font class='headline'>About Me</font>
+  <br/>
+  <br/>
+  My name is Dor Pinhas, I'm 26 years old and originally from up in Tel Aviv.<br/>
+  I am a third year student in the Information Systems Engeneering department in Ben Gurion University.<br/>
+  I like to spend time with my family and friends, dive, cook and photograph.<br/>
+  I have littel experience with web development and I didn't like it so far, so I wish that the course will change my mind about it.
 </section>
 
 <section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
+  <br/>
+  <br/>
+  <br/>
+  <font class='headline'>My Photos</font>
+  <br/>
+  <br/>
+  <img src=pic1.jpeg width=300 height=400 />
+  <img src=pic2.jpeg width=300 height=400 />
+  <img src=pic3.jpeg width=300 height=400 />
+  <img src=pic4.jpeg width=300 height=400 />
 </section>
 
 <section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <font class='headline'>My Playlist</font>
+  <br/>
+  <br/>
+  <iframe src="https://www.youtube.com/embed/videoseries?list=RDJkafqBj6dsk" allow="autoplay; encrypted-media" allowfullscreen width=560 height=315></iframe>
 </section>
 
 <section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <font class='headline'>Give Me a Like</font>
+  <br/>
+  <br/>
+  <br/>
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0"></script>
+
+  <!-- Your like button code -->
+  <div class="fb-like" 
+    data-href="http://127.0.0.1:5500/index.html#like" 
+    data-layout="standard" 
+    data-action="like" 
+    data-show-faces="true"
+    data-share="true">
+  </div>
 </section>
 
 <section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <font class='headline'>Scan My Code:</font>
+  <br/>
+  <br/>
+  <img src=qrcode.png width=200 height=200 />
 </section>
 
 <section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <font class='headline'>Q & A</font><br/>
+  <br/>
+  <font class='question'>The main diffrences between web1,web2 and web3</font> <br/>
+  <br/>
+  The web 1 was considerd as a "read only web", it allowed us to search for Information and read it.<br/>
+  There was very little user interaction.<br/>
+  The web 2 in contrast to his its ancestor is more interactive and collaborative for the users,<br/>
+  they could contribute to the content of the web (blogs, wikipedia and more)<br/>
+  The web 3 is known as the Semntic Web, and the main idea is data integration.<br/>
+  By using metadata, "display only" data is converted to meaningful information,<br/>
+  which can be located, evaluated, and delivered by software agents.<br/>
+  <br/>
+  <font class='question'>"Medicines side effects" Use Case </font>  <br/>
+  <br/>
+  Web 1 - The user inserts a known url ,that contains information about medicines side effects, to the browser.<br/>
+  Web 2 - The user inserts a query "medicines side effects" to a search engine,<br/>
+  and gets links to wedsites that have referance to the query words.<br/>
+  Web 3 - The user inserts a query medicines side effects" to a search engine (like in web 2),<br/>
+  and gets links to websites that their content is probably strongly connected to the query and maybe 
+  adjusted to the user himself.
+  **** fill ****
 </section>
 
 <section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <font class='headline'>Contact Me</font> <br/>
+  <br/>
+  <form class="question" method="POST" name="contact_form" action="mailto:dorpi@post.bgu.ac.il"> 
+    Your Name: 
+    <input type=”text” name=”name”> 
+    <br/>
+    <br/>
+    Email Address:
+    <input type=”text” name=”email”> 
+    <br/>
+    <br/>
+    Message:    
+    <br/>
+    <br/>
+    <textarea name=”message” rows="7" cols="70"></textarea>
+    <br/>
+    <br/>
+    <input type=submit value=Send></input> 
+    **** add emojy ****
+  </form>
 </section>
 
 
